@@ -2,7 +2,6 @@ function nextPattern() {
   var text;
   var color;
   var dots;
-  var image = "<img class='dot-pic' src='images/dot.png'></img>";
   var colors =["red","yellow","blue","green","aqua","pink","orange"];
   var $numberDiv = $('#numberDiv');
   var $patternDivs = $('.patternDiv');
@@ -14,7 +13,6 @@ function nextPattern() {
   $numberDiv.html(answer);
   color = colors[Math.floor(Math.random() * colors.length)];
   $numberDiv.css('background-color',color);
-  $patternDivs.html('');
   for(var i=0;i<4;i++) {
     var dotRows;
     if(i == answerDiv) {
@@ -27,10 +25,10 @@ function nextPattern() {
     dotRows = getDotRows(dots); 
     for(var x=0;x<4;x++) {
       var length = dotRows[x];
-      for(var d=1;d<=length;d++) {
-        $patternDivs.eq(i).append(image);
+      for(var d=0;d<length;d++) {
+        var index = d + 5*x;
+        $patternDivs.eq(i).children('.dot').eq(index).removeClass('dot-hide').addClass('dot-show');
       }
-      $patternDivs.eq(i).append('<br>');
     }
     patterns.push(dots);
   }
