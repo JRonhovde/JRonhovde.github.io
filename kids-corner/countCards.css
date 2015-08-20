@@ -1,0 +1,75 @@
+#container {
+  top:0;
+  left:0;
+  width:100%;
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:10px;
+}
+#numberDiv {
+  width:120px;
+  height:100px;
+  text-align:center;
+  font-family:Sassoon Primary;
+  font-size:80px;
+  padding-top:10px;
+  margin:auto;
+  font-weight:bold;
+  border:10px solid black;
+  border-radius:25px;
+}
+#resultContainer { 
+  width:99%;
+  position:absolute;
+  top:160px;
+  text-align:center;
+}
+
+.resultAnswer {
+  margin:auto;
+  float:none;
+  margin-top:20px;
+  width:100%;
+}
+#resultDiv {
+  cursor:pointer;
+  font-family:Sassoon Primary;
+  text-align:center;
+  font-size:35px;
+  font-weight:bold;
+  margin:auto;
+  background-color:pink;
+  height:310px;
+  width:400px;
+  border:5px solid black;
+  border-radius:15px;
+  padding:10px;
+  padding-right:30px;
+  display:none;
+}
+#patternContainer {
+  width:425px;
+  margin:auto;
+}
+.dots {
+  font-family:Sassoon Primary;
+  font-size:30px;
+  font-weight:bold;
+  height:150px;
+  border:3px solid black;
+  border-radius:15px;
+  background-color:white;
+  width:190px;
+}
+.patternDiv {
+  float:left;
+  cursor:pointer;
+  margin:auto 1.8%;
+  margin-top:5px;
+}
+.dot-pic {
+  height:30px;
+  width:30px;
+  float:left;
+  padding:3px;
+}

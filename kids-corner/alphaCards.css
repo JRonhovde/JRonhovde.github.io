@@ -1,0 +1,19 @@
+#container {
+  width:100%;
+  text-align:center;
+}
+
+#letterDiv {
+  width:200px;
+  height:180px;
+  margin:auto;
+  text-align:center;
+  font-family:Sassoon Primary;
+  font-size:80px;
+  padding-top:70px;
+  margin-top:20px;
+  font-weight:bold;
+  border:10px solid black;
+  border-radius:25px;
+  cursor:pointer;
+}

@@ -1,0 +1,23 @@
+#container {
+  width:100%;
+  text-align:center;
+}
+
+#letterDiv {
+  width:50%;
+  height:150px;
+  margin:auto;
+  text-align:center;
+  font-family:Sassoon Primary;
+  font-size:80px;
+  padding-top:80px;
+  font-weight:bold;
+}
+#buttonDiv {
+  text-align:center;
+  padding-top:20px;
+}
+#nextBtn {
+  cursor:pointer;
+  font-size:20px;
+}
