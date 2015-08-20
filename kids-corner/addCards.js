@@ -50,7 +50,7 @@ function testAnswer($clicked) {
       .addClass('wrong-answer');
     $('.answer-div').removeClass('neutral-answer')
       .addClass('right-answer');
-    $('#wrong-answer').html(':\(');
+    $('#wrong-answer').html(':(');
   }
   $('#flashcard').addClass('ready-next');
 }

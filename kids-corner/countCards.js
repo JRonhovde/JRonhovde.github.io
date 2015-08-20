@@ -7,6 +7,7 @@ function nextPattern() {
   var $patternDivs = $('.patternDiv');
   var answerDiv = Math.floor(Math.random() * 4);
   var patterns = [];
+  $('.dot-show').addClass('dot-hide').removeClass('dot-show');
   $('.answer-div').removeClass('answer-div');
   $patternDivs.eq(answerDiv).addClass('answer-div');
   answer = Math.floor(Math.random() * 20);
@@ -27,6 +28,7 @@ function nextPattern() {
       var length = dotRows[x];
       for(var d=0;d<length;d++) {
         var index = d + 5*x;
+        if(i == 1) console.log("row: "+x+" dot: "+d+" index: "+index);
         $patternDivs.eq(i).children('.dot').eq(index).removeClass('dot-hide').addClass('dot-show');
       }
     }
