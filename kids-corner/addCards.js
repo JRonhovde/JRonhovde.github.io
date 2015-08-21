@@ -15,7 +15,7 @@ function nextQuestion() {
   $('.question').each(function() {
     var thisDiv = $(this);
     thisDiv.html('');
-    dots = Math.floor(Math.random() * 4) + 1;
+    dots = Math.floor(Math.random() * 5) + 1;
     for(var i=0;i<dots;i++) {
       if(i==5) thisDiv.append('<br>'); 
       thisDiv.append(image);
