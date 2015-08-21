@@ -3,6 +3,18 @@ function nextQuestion() {
   var color;
   var dots;
   var answer = 0;
+  var max;
+  var numbers = {
+    7 : 1,
+    8 : 2,
+    9 : 3,
+    4 : 4,
+    5 : 5,
+    6 : 6,
+    1 : 7,
+    2 : 8,
+    3 : 9
+  };
   var image = "<img class='dot-pic' src='images/dot.png'></img>";
   var colors =["yellow","blue","aqua","pink","orange"];
   $('.right-answer, .wrong-answer').removeClass('right-answer')
@@ -15,14 +27,16 @@ function nextQuestion() {
   $('.question').each(function() {
     var thisDiv = $(this);
     thisDiv.html('');
-    dots = Math.floor(Math.random() * 5) + 1;
+    if(answer == 5) max = 4;
+    else max = 5;
+    dots = Math.floor(Math.random() * max) + 1;
     for(var i=0;i<dots;i++) {
       if(i==5) thisDiv.append('<br>'); 
       thisDiv.append(image);
     }
     answer += dots;
   });
-  var answerDiv = answer-1;
+  var answerDiv = numbers[answer]- 1;
   $('.answer-div').removeClass('answer-div');
   $numberDivs = $('.numberDiv');
   $numberDivs.eq(answerDiv).addClass('answer-div');
