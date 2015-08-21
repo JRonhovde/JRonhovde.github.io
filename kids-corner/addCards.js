@@ -22,34 +22,18 @@ function nextQuestion() {
     }
     answer += dots;
   });
-  var usedAnswers = [];
-  var answerDiv = Math.floor(Math.random() * 4);
+  var answerDiv = answer-1;
   $('.answer-div').removeClass('answer-div');
   $numberDivs = $('.numberDiv');
   $numberDivs.eq(answerDiv).addClass('answer-div');
-  for(var i=0;i<4;i++) {
-    var numberDiv = $numberDivs.eq(i);
-    if(i == answerDiv) {
-      number = answer;
-    }else{
-      do {
-        number = Math.floor(Math.random() * 8) +2;
-      }while(number == answer || usedAnswers.indexOf(number) > -1);
-    }
-    numberDiv.html(number);
-    usedAnswers.push(number);
-  }
 }
 function testAnswer($clicked) {
   if($clicked.hasClass('answer-div')) {
-    $clicked.removeClass('neutral-answer')
-      .addClass('right-answer');
+    $clicked.addClass('right-answer');
     $('#right-answer').html(':)');
   }else{
-    $clicked.removeClass('neutral-answer')
-      .addClass('wrong-answer');
-    $('.answer-div').removeClass('neutral-answer')
-      .addClass('right-answer');
+    $clicked.addClass('wrong-answer');
+    $('.answer-div').addClass('right-answer');
     $('#wrong-answer').html(':(');
   }
   $('#flashcard').addClass('ready-next');
