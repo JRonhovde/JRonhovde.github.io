@@ -1,0 +1,137 @@
+body {
+    font-family:Helvetica;
+}
+#flashcard {
+    width:216px;
+    height:257px;
+    padding-top:20px;
+    padding-bottom:10px;
+    border:8px solid black;
+    border-radius:25px;
+    margin:auto;
+}
+#flashcard-container {
+    position:relative;
+    width:650px;
+    height:300px;
+    margin:auto;
+    margin-top:20px;
+    text-align:right;
+}
+.resultDiv {
+    text-align:center;
+    font-size:35px;
+    font-weight:bold;
+    margin:auto;
+    width:150px;
+    border:5px solid black;
+    padding-top:40px;
+    padding-bottom:40px;
+    position:absolute;
+    bottom:0;
+    border-radius:15px;
+}
+.flashcard-numbers {
+    position:relative;
+    width:190px;
+    margin:auto;
+}
+#question-container {
+    min-height:170px;
+    border-bottom:5px solid black;
+}
+.question-answer {
+    font-size:70px;
+    font-weight:bold;
+    background-color:transarent;
+    width:130px;
+    right:30px;
+    bottom:0;
+    position:absolute;
+}
+#operand {
+    font-size:70px;
+    font-weight:bold;
+    margin:auto;
+    position:absolute;
+    bottom:0;
+    right:120px;
+}
+#answer-container {
+    font-size:70px;
+    font-weight:bold;
+    min-height:90px;
+}
+
+#number-container {
+    position:relative;
+    width:645px;
+    height:250px;
+    margin:auto;
+    margin-top:5px;
+    text-align:center;
+}
+#row-container {
+    width:198px;
+    height:50px;
+    margin:auto;
+    padding-top:6px;
+}
+.numberDiv {
+    border-radius:15px;
+    border:5px solid black;
+    background-color:white;
+    float:left;
+    font-size:30px;
+    font-weight:bold;
+    cursor:pointer;
+    margin:auto 3px;
+    height:40px;
+    width:50px;
+    margin-top:5px;
+    padding-top:2px;
+    text-align:center;
+}
+.emptyNum {
+    border-radius:15px;
+    border:5px solid white;
+    background-color:white;
+    float:left;
+    margin:auto 3px;
+    height:40px;
+    width:50px;
+    margin-top:5px;
+    padding-top:2px;
+    text-align:center;
+}
+.dot-pic {
+    height:30px;
+    width:30px;
+    float:left;
+    padding:3px;
+}
+.check-answer {
+    font-size:30px;
+    font-weight:bold;
+    right:0;
+    background-color:green;
+    cursor:pointer;
+}
+.clear-answer {
+    font-size:30px;
+    font-weight:bold;
+    left:0;
+    background-color:red;
+    cursor:pointer;
+}
+.right-answer {
+    color:green;
+}
+.wrong-answer {
+    color:red;
+    text-decoration:line-through;
+}
+
+.neutral-answer {
+    background-color:white;
+}
